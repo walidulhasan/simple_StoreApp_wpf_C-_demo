@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Newtonsoft.Json;
 
 namespace StoreApp
 {
@@ -33,10 +34,11 @@ namespace StoreApp
         }
         public MainWindow()
         {
-            this.MaxHeight = 410;
+            this.MaxHeight = 496;
             this.MaxWidth = 794;
             InitializeComponent();
             this.Focus(cmdtitle);
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
